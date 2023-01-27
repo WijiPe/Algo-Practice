@@ -20,9 +20,9 @@ function ErrorDigitRange(num){
 
     for(let j = 0; j < skipFirstDigit.length; j++){
         if(numString[0] != skipFirstDigit[j]){
-            newNumString = numString[0] + skipFirstDigit.replaceAll(skipFirstDigit[j], '0')
+            newNumString = numString[0] + skipFirstDigit.replaceAll(skipFirstDigit[j], '0') 
         }else{
-            newNumString = max
+            newNumString = numString
         }
         // newNumString = numString[0] + skipFirstDigit.replaceAll(skipFirstDigit[j], '0')
         console.log(newNumString)
@@ -37,6 +37,6 @@ function ErrorDigitRange(num){
 
 // ErrorDigitRange(909) //898
 // ErrorDigitRange(123512) //82008
-// ErrorDigitRange(111) //888
+ErrorDigitRange(111) //888
 // ErrorDigitRange(2020)
-ErrorDigitRange(151) //
+// ErrorDigitRange(151) //
